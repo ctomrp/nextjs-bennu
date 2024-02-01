@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import Image from "next/image";
+import { Section } from "@/components/section/Section";
+import { Typewriter } from "react-simple-typewriter";
 import bgHome from "@/assets/developers.jpg";
 import s from "./style.module.css";
-import { Section } from "../section/Section";
-import { Typewriter } from "react-simple-typewriter";
 
 export function Principal() {
   const keyWords = [
@@ -23,32 +23,29 @@ export function Principal() {
     "DevOps",
     "Gitlab",
     "Kong",
-  ]
+  ];
   return (
     <>
       <div className={`${s.box}`}>
-        <div className={`${s.bgHome}`}>
-          <Image
-            src={bgHome}
-            alt="mujer mirando una app móvil"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
+        <Image
+          src={bgHome}
+          alt="mujer mirando una app móvil"
+          className={`${s.bgHome}`}
+        />
         <div className="container">
           <h1 className={`text-light text-center fw-semibold ${s.messagemt}`}>
-          Tus ideas en soluciones modernas
-        <div style={{ color: "#ffffff" }}>
-                  <Typewriter
-                    words={keyWords}
-                    loop={0}
-                    cursor
-                    cursorStyle="_"
-                    typeSpeed={80}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                  />
-                </div>
+            Tus ideas en soluciones modernas
+            <div style={{ color: "#ffffff" }}>
+              <Typewriter
+                words={keyWords}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </div>
           </h1>
         </div>
       </div>

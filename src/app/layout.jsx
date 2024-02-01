@@ -1,5 +1,5 @@
-import "../../node_modules/bootstrap/dist/css/bootstrap.css"
-import Bootstrap from "@/components/bootstrap/Bootstrap";
+import 'bootstrap/dist/css/bootstrap.css'
+import BootstrapClient from '@/components/bootstrapClient/BootstrapClient';
 
 export const metadata = {
   title: "Bennu",
@@ -10,8 +10,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body>
+        <BootstrapClient />
         {children}
-        <Bootstrap />
       </body>
     </html>
   );
