@@ -23,15 +23,11 @@ export function Principal() {
   return (
     <>
       <div className={`${s.box}`}>
-        <Suspense fallback={
-          <Loading />
-        }>
         <Image
           src={bgHome}
           alt="mujer mirando una app móvil"
           className={`${s.bgHome}`}
         />
-        </Suspense>
         <div className="container d-flex justify-content-center">
           <h1 className={`text-light text-center fw-semibold ${s.messagemt}`}>
             Tus ideas en soluciones modernas
