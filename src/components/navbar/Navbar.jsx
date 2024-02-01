@@ -4,7 +4,6 @@ import logo from "@/assets/logo.png";
 import s from "./style.module.css";
 
 export async function Navbar() {
-  await new Promise(resolve => setTimeout(resolve, 3000))
   return (
     <nav
       className={`navbar navbar-expand-lg p-5 fixed-top ${s.blurcustom} container-fluid`}
