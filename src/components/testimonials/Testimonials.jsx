@@ -24,7 +24,7 @@ export function Testimonials() {
                   icon={customer}
                   title={"Cristian R. P."}
                   content={
-                    "Excelente lugar para aprender y buen clima laboral."
+                    "Excelente lugar para aprender y buen clima laboral. Equipo muy responsable y comprometido."
                   }
                 />
               </div>

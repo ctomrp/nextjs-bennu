@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { Suspense } from "react";
 import { Section } from "@/components/section/Section";
 import { Typewriter } from "react-simple-typewriter";
+import Loading from "@/app/loading";
 import bgHome from "@/assets/developers.jpg";
 import s from "./style.module.css";
 
@@ -27,11 +29,15 @@ export function Principal() {
   return (
     <>
       <div className={`${s.box}`}>
+        <Suspense fallback={
+          <Loading />
+        }>
         <Image
           src={bgHome}
           alt="mujer mirando una app móvil"
           className={`${s.bgHome}`}
         />
+        </Suspense>
         <div className="container d-flex justify-content-center">
           <h1 className={`text-light text-center fw-semibold ${s.messagemt}`}>
             Tus ideas en soluciones modernas
