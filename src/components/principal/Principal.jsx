@@ -10,21 +10,15 @@ import s from "./style.module.css";
 
 export function Principal() {
   const keyWords = [
-    "Informática",
-    "Programación",
+    "Innovación",
     "Desarrollo",
-    "Base de Datos",
+    "Emprendimiento",
     "Asesoría",
-    "Java",
-    "JEE",
-    "Docker",
-    "Kubernetes",
+    "Infraestructura",
     "Cloud",
-    "AWS",
     "Scrum",
     "DevOps",
-    "Gitlab",
-    "Kong",
+    "Capacitación",
   ];
   return (
     <>
