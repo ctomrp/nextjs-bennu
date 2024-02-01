@@ -1,0 +1,28 @@
+.box {
+    width: 100vw;
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bgHome {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 80vh;
+}
+
+.messagemt {
+    margin-top: 60vh;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.message {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bgExtra {
+    background-image: url('../../assets/wave-dark.svg');
+    background-size: cover;
+}
