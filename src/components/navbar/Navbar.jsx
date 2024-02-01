@@ -3,7 +3,7 @@ import Link from "next/link";
 import logo from "@/assets/logo.png";
 import s from "./style.module.css";
 
-export async function Navbar() {
+export function Navbar() {
   return (
     <nav
       className={`navbar navbar-expand-lg p-5 fixed-top ${s.blurcustom} container-fluid`}
