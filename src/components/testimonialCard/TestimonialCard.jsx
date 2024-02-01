@@ -5,13 +5,6 @@ export function TestimonialCard({ icon, title, content }) {
   return (
     <>
       <div className={`${s.testimonialCard} d-flex gap-3`}>
-        <div className={`${s.iconTestimonialContainer}`}>
-          <Image
-            src={icon}
-            className={`${s.iconTestimonial}`}
-            alt="foto de persona"
-          />
-        </div>
         <div className="container-fluid">
           <p className="text-uppercase fw-semibold d-flex fs-5 justify-content-center">
             {title}
