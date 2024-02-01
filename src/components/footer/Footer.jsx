@@ -5,17 +5,17 @@ export function Footer() {
   return (
     <>
       <ul
-        className={`nav justify-content-between bg-black p-5 ${s.footer}`}
+        className={`nav flex-column-reverse flex-md-row justify-content-center justify-content-md-between bg-black p-5 ${s.footer}`}
         data-bs-theme="dark"
       >
         <li className="nav-item">
-          <Link className="nav-link fw-bold text-light btn btn-dark" href="#">
+          <Link className={`nav-link text-light ${s.link} btn btn-dark fw-bold`} href="#us">
             Inicio
           </Link>
         </li>
         <li className="nav-item">
           <Link
-            className="nav-link text-light"
+            className={`nav-link text-light text-center ${s.link}`}
             href="https://www.bing.com/maps?where=Eduardo+LLanos+30A+%C3%91u%C3%B1oa+Santiago+CL&trk=org-locations_url"
             target="_blank"
           >
@@ -24,7 +24,7 @@ export function Footer() {
         </li>
         <li className="nav-item">
           <Link
-            className="nav-link"
+            className={`nav-link ${s.link}`}
             href="https://cl.linkedin.com/company/bennu-cl"
             target="_blank"
           >

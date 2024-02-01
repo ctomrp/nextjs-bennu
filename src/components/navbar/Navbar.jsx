@@ -3,14 +3,15 @@ import Link from "next/link";
 import logo from "@/assets/logo.png";
 import s from "./style.module.css";
 
-export function Navbar() {
+export async function Navbar() {
+  await new Promise(resolve => setTimeout(resolve, 3000))
   return (
     <nav
       className={`navbar navbar-expand-lg p-5 fixed-top ${s.blurcustom} container-fluid`}
       data-bs-theme="dark"
     >
       <div className="container-fluid">
-        <Link className="navbar-brand col-3" href="#">
+        <Link className="navbar-brand col-3" href="#us">
           <Image src={logo} className={`${s.logocustom}`} alt="logo de bennu" />
         </Link>
         <button

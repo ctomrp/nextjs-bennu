@@ -6,6 +6,7 @@ import { Testimonials } from "@/components/testimonials/Testimonials";
 import { Footer } from "@/components/footer/Footer";
 
 export default function Home() {
+
   return (
     <>
       <Navbar />
