@@ -17,9 +17,8 @@ export function Testimonials() {
                 text-light
                 ${s.bgExtra}`}
         content={
-          <div className="container-fluid p-5">
-            <div className="">
-              <div className="col-12 col-md-6 col-lg-4">
+          <div className="container-fluid p-5 d-md-flex justify-content-md-center">
+              <div className="col-12 col-md-6 col-lg d-flex flex-column flex-lg-row">
                 <TestimonialCard
                   icon={customer}
                   title={"Cristian R. P."}
@@ -28,7 +27,6 @@ export function Testimonials() {
                   }
                 />
               </div>
-            </div>
           </div>
         }
       />
